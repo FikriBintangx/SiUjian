@@ -1,0 +1,12 @@
+SiUjian_Setup.exe
+READY_TO_DEPLOY/
+*.exe
+dist/
+build/
+nbproject/private/
+READY_TO_DEPLOY/
+READY_TO_DEPLOY/
+*.exe
+dist/
+build/
+nbproject/private/

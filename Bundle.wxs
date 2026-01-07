@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+    <!-- DEFINISI BUNDLE (BOOTSTRAPPER) -->
+    <Bundle Name="SiUjian CBT Installer" 
+            Version="1.0.0.0" 
+            Manufacturer="SiUjian Dev" 
+            UpgradeCode="55806666-4122-4217-8092-999999999999">
+
+        <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+            <bal:WixStandardBootstrapperApplication
+                LicenseUrl=""
+                SuppressOptionsUI="yes" />
+        </BootstrapperApplicationRef>
+
+        <Chain>
+            <!-- Install .NET Framework if needed? Skipping for now as user only mentioned JRE -->
+            
+            <!-- Main MSI Package -->
+            <MsiPackage SourceFile="SiUjian_Setup.msi" DisplayInternalUI="yes" Vital="yes" />
+        </Chain>
+    </Bundle>
+</Wix>
